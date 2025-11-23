@@ -8,7 +8,6 @@ const HomePage = () => {
   return (
     <>
       <Home />
-      <Category />
       <CategoryProyects />
       <AboutUs />
     </>
