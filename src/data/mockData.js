@@ -73,12 +73,12 @@ const projects = [
   },
   {
     id: '6',
-    name: 'Kento',
+    name: 'Sienna',
     type: 'Web Development',
     design: 'Julian Kellmer',
     year: '2023',
-    url: 'https://kento.ct.ws/?i=1',
-    img: '/images/Kento.png',
+    url: 'https://siennamodular.netlify.app/',
+    img: '/images/Sienna.png',
     logo: '/images/sony.png',
     webMockup:
       'https:/ /images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80',

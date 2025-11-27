@@ -46,7 +46,7 @@ const CategoryProyects = () => {
             scrollTrigger: {
               trigger: section,
               containerAnimation: horizontalTl, // 🔥 Usar la referencia correcta
-              start: index === 0 ? 'left left' : 'left right',
+              start:  'left left' ,
               end: 'right left',
               scrub: 1, // Más lento
               id: `parallax-text-${index}`, // 🔥 ID único
@@ -61,7 +61,7 @@ const CategoryProyects = () => {
             scrollTrigger: {
               trigger: section,
               containerAnimation: horizontalTl, // 🔥 Usar la referencia correcta
-              start: index === 0 ? 'left left' : 'left right',
+              start:  'left left' ,
               end: 'right left',
               scrub: 1, // Más lento
               id: `parallax-text-${index}`, // 🔥 ID único

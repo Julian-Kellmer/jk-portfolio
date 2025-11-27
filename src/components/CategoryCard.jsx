@@ -6,15 +6,10 @@ const CategoryCard = ({ title, img, name, desc }) => {
         <div className=' relative lg:absolute lg:top-[12%] flex flex-col gap-4 lg:left-[12%] w-full lg:w-1/3 z-10'>
           <h2
             id='title'
-            className='text-5xl lg:text-[96px] font-primary tracking-tighter leading-none text-white capitalize'>
+            className='text-4xl lg:text-[96px] font-primary tracking-tighter leading-none text-white capitalize'>
             {title}
           </h2>
-          <Link
-            id='link'
-            to={`/gallery?category=${title}`}
-            className=' text-primary text-lg lg:text-xl px-0 lg:px-4  font-primary tracking-tighter leading-none hover:underline'>
-            Ver proyecto {title}
-          </Link>
+         
         </div>
         <div className='hidden lg:block lg:flex-[2]'></div>
         <div
