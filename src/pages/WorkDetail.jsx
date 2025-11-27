@@ -48,10 +48,10 @@ const WorkDetail = () => {
             </div>
 
 
-            {/* Contenido */}
-            <div className="max-w-4xl mx-auto p-6 mt-12">
+           
+            {/* <div className="max-w-4xl mx-auto p-6 mt-12">
                 <div className="grid grid-cols-1 gap-8">
-                    {/* Información principal */}
+              
                     <div className="space-y-6">
                         <h2 className="text-3xl font-bold tracking-tighter">About the project</h2>
                         <p className="text-xl leading-relaxed text-gray-800 font-primary">
@@ -59,7 +59,7 @@ const WorkDetail = () => {
                         </p>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 };

@@ -7,7 +7,7 @@ import Projects from '../data/mockData'
 gsap.registerPlugin(ScrollTrigger)
 
 const CategoryProyects = () => {
-  const reduceProjects= Projects.slice(0,4)
+  const reduceProjects = Projects.slice(0, 4)
   const containerRef = useRef(null)
 
   useEffect(() => {
@@ -46,7 +46,7 @@ const CategoryProyects = () => {
             scrollTrigger: {
               trigger: section,
               containerAnimation: horizontalTl, // 🔥 Usar la referencia correcta
-              start:  'left left' ,
+              start: 'left left',
               end: 'right left',
               scrub: 1, // Más lento
               id: `parallax-text-${index}`, // 🔥 ID único
@@ -61,7 +61,7 @@ const CategoryProyects = () => {
             scrollTrigger: {
               trigger: section,
               containerAnimation: horizontalTl, // 🔥 Usar la referencia correcta
-              start:  'left left' ,
+              start: 'left left',
               end: 'right left',
               scrub: 1, // Más lento
               id: `parallax-text-${index}`, // 🔥 ID único

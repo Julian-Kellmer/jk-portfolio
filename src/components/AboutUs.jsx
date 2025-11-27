@@ -13,13 +13,15 @@ const AboutUs = () => {
         <div className=' gap-4 w-full'>
           <ul className='flex justify-start flex-col text-white font-title tracking-none leading-tight font-primary capitalize md:text-[48px]'>
             <li>
-              <a href=''>Instagram</a>
+              <a href='https://www.instagram.com/juli_kellmer/'>Instagram</a>
             </li>
             <li>
-              <a href=''>Linkedin</a>
+              <a href='https://www.linkedin.com/in/juli%C3%A1n-kellmer-344875288/'>
+                Linkedin
+              </a>
             </li>
             <li>
-              <a href=''>Behance</a>
+              <a href='https://github.com/Julian-Kellmer'>Github</a>
             </li>
           </ul>
         </div>
@@ -38,7 +40,8 @@ const AboutUs = () => {
 
       <div>
         <h3 className='font-title mx-auto text-center  text-[40px] font-black text-[#2269E1] md:text-[200px] tracking-none md:tracking-tighter leading-none capitalize font-primary '>
-Contact me        </h3>
+          Contact me{' '}
+        </h3>
       </div>
     </div>
   )
