@@ -17,7 +17,6 @@ const CategoryProyects = () => {
     const container = containerRef.current
 
     const ctx = gsap.context(() => {
-      // 🔥 GUARDAR la referencia de la animación horizontal
       const horizontalTl = gsap.to(sections, {
         xPercent: -100 * (sections.length - 1),
         ease: 'none',
@@ -32,7 +31,6 @@ const CategoryProyects = () => {
         },
       })
 
-      // 🔥 MOVER el forEach DENTRO del context
       sections.forEach((section, index) => {
         const title = section.querySelector('#title')
         const link = section.querySelector('#link')
@@ -45,11 +43,11 @@ const CategoryProyects = () => {
             ease: 'none',
             scrollTrigger: {
               trigger: section,
-              containerAnimation: horizontalTl, // 🔥 Usar la referencia correcta
+              containerAnimation: horizontalTl,
               start: 'left left',
               end: 'right left',
-              scrub: 1, // Más lento
-              id: `parallax-text-${index}`, // 🔥 ID único
+              scrub: 1,
+              id: `parallax-text-${index}`,
             },
           })
         }

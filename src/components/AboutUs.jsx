@@ -3,7 +3,7 @@ const AboutUs = () => {
     <div className='overflow-hidden h-screen flex px-4 py-8 flex-col justify-between bg-black pt-24'>
       <div className='flex  flex-col md:flex-row justify-between bg-black pt-24 md:gap-16 gap-16'>
         <div className=' font-title flex-wrap flex gap-6'>
-          <h1 className='text-white text-[40px] font-black font-title md:text-[80px] tracking-none md:tracking-tighter leading-none font-primary break-all md:break-words'>
+          <h1 className='text-white text-[40px] font-black font-title md:text-[80px] leading-none font-primary break-all md:break-words'>
             Kellmer002@gmail.com
           </h1>
           <h2 className='text-white/25 text-[24px] font-title  md:text-[36px] tracking-none md:tracking-tighter leading-none font-primary capitalize  break-words'>
@@ -34,13 +34,25 @@ const AboutUs = () => {
             <li>Gsap</li>
             <li>Figma</li>
             <li>Blender</li>
+            <li>Flutter</li>
           </ul>
         </div>
       </div>
 
       <div>
-        <h3 className='font-title mx-auto text-center  text-[40px] font-black text-[#2269E1] md:text-[200px] tracking-none md:tracking-tighter leading-none capitalize font-primary '>
-          Contact me{' '}
+        <h3 className='font-title mx-auto text-center  text-[40px] font-black text-[#2269E1] md:text-[200px]  leading-none capitalize font-primary '>
+          <a
+            href='mailto:kellmer002@gmail.com'
+            className='group inline-block cursor-pointer'>
+            {'Contact me'.split('').map((char, index) => (
+              <span
+                key={index}
+                className='wave-char'
+                style={{ animationDelay: `${index * 0.05}s` }}>
+                {char === ' ' ? '\u00A0' : char}
+              </span>
+            ))}
+          </a>
         </h3>
       </div>
     </div>

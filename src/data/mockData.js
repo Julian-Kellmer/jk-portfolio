@@ -11,7 +11,7 @@ const projects = [
     webMockup: '/images/captiraaromatik.png',
     mobileMockup: '/images/capturaAromatikkBobile.png.png',
     description:
-      'A comprehensive web development project focusing on scalability and performance.',
+      'Un proyecto integral de desarrollo web enfocado en la escalabilidad y el rendimiento.',
   },
   {
     id: '2',
@@ -25,7 +25,7 @@ const projects = [
     webMockup: '/images/TTTMockup.png',
     mobileMockup: '/images/TTTMobile.png',
     description:
-      'A comprehensive web development project focusing on scalability and performance.',
+      'Un proyecto de desarrollo web enfocado en la facilidad de usuario para desenbolberse en la pagina, y encotrar lo que quiere rapidamente.Principal desafio fue sincronizar el catalogo del cliente usando su excel sin modificarlo.',
   },
   {
     id: '3',
@@ -41,7 +41,7 @@ const projects = [
     mobileMockup:
       'https:/ /images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80',
     description:
-      'A comprehensive web development project focusing on scalability and performance.',
+      'Proyecto web, donde el principal desafio fue desenboverse de cero en wordpress. Sin tener absoluto conocimiento de wordpress, aprendi a usarlo y a personalizarlo para el cliente en un tiempo reducido.',
   },
   {
     id: '4',
@@ -57,20 +57,9 @@ const projects = [
     mobileMockup:
       'https:/ /images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80',
     description:
-      'Full mobile native app ,made with flutter flow. the proyect wasnt release becouse off the contractor. but the proyect was finished ',
+      'Aplicación móvil nativa completa, realizada con Flutter. El proyecto no se lanzó debido al contratista, pero el proyecto se terminó.Principal desafio fue aprender a usar flutter para crear una aplicacion movil.',
   },
-  {
-    id: '5',
-    name: 'Sony Expirience',
-    type: '3d Design',
-    design: 'Julian Kellmer',
-    year: '20235',
 
-    img: '/images/sony.png',
-    logo: '/images/sony.png',
-    description:
-      '3d design for the brand sony. The obstacults were introduction into 3d design, with the new ways os designing i get the knolege to developed some realistic mockups',
-  },
   {
     id: '6',
     name: 'Sienna',
@@ -85,7 +74,23 @@ const projects = [
     mobileMockup:
       'https:/ /images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80',
     description:
-      'A comprehensive web development project focusing on scalability and performance.',
+      'Proyecto web,Sin mucha dificultad, encontre un lugar para jugar con animaciones sin perder el objetivo.',
+  },
+  {
+    id: '7',
+    name: 'Ashtanga web',
+    type: 'Web Development',
+    design: 'Julian Kellmer',
+    year: '2026',
+    // url: 'https://siennamodular.netlify.app/',
+    img: '/images/ashtangaWeb.png',
+    // logo: '/images/AshtangaLogo.png',
+    webMockup:
+      'https:/ /images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80',
+    mobileMockup:
+      'https:/ /images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80',
+    description:
+      'Proyecto de desarrollo web. El objetivo fue centralizar todos los servicios del cliente en una web. Por otro lado, tuve el desafío de conectar un servicio de pago, lo cual resolví con n8n y el módulo de PayPal.',
   },
 ]
 export default projects

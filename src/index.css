@@ -1,61 +1,79 @@
 @import 'tailwindcss';
 
 @font-face {
-	font-family: 'HELVETICA-BOLD';
-	src: url('/fonts/HELVETICA-BOLD.TTF') format('truetype');
-	font-weight: 700;
-	font-style: normal;
+  font-family: 'HELVETICA-BOLD';
+  src: url('/fonts/HELVETICA-BOLD.TTF') format('truetype');
+  font-weight: 700;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'HELVETICA';
-	src: url('/fonts/HELVETICA.TTF') format('truetype');
-	font-weight: 400;
-	font-style: normal;
+  font-family: 'HELVETICA';
+  src: url('/fonts/HELVETICA.TTF') format('truetype');
+  font-weight: 400;
+  font-style: normal;
 }
 @font-face {
-	font-family: 'HELVETICA-LIGHT';
-	src: url('/fonts/HELVETICA-LIGHT.TTF') format('truetype');
-	font-weight: 200;
-	font-style: normal;
+  font-family: 'HELVETICA-LIGHT';
+  src: url('/fonts/HELVETICA-LIGHT.TTF') format('truetype');
+  font-weight: 200;
+  font-style: normal;
 }
 @font-face {
-	font-family: 'bebas-neue-regular';
-	src: url('/fonts/BebasNeue-Regular.ttf') format('truetype');
-	font-weight: 400;
-	font-style: normal;
+  font-family: 'bebas-neue-regular';
+  src: url('/fonts/BebasNeue-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
 }
 @theme {
-	--font-primary: 'HELVETICA';
-	--font-bold: 'HELVETICA-BOLD';
-	--font-light: 'HELVETICA-LIGHT';
-	--font-title: 'bebas-neue-regular';
+  --font-primary: 'HELVETICA';
+  --font-bold: 'HELVETICA-BOLD';
+  --font-light: 'HELVETICA-LIGHT';
+  --font-title: 'bebas-neue-regular';
 
-	--color-background: var(--background);
-	--color-foreground: var(--foreground);
-	--font-Primary: var(--font-inter);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-Primary: var(--font-inter);
 
-	--text-web-title: 3em;
-	--text-web-subtitle: 1.3em;
-	--text-web-section: 2.5em;
-	--text-web-article: 1.1em;
-	--text-web-body: 0.8em;
+  --text-web-title: 3em;
+  --text-web-subtitle: 1.3em;
+  --text-web-section: 2.5em;
+  --text-web-article: 1.1em;
+  --text-web-body: 0.8em;
 
-	--text-mobile-title: 1.8em;
-	--text-mobile-subtitle: 1em;
-	--text-mobile-article: 0.95em;
-	--text-mobile-body: 0.875em;
+  --text-mobile-title: 1.8em;
+  --text-mobile-subtitle: 1em;
+  --text-mobile-article: 0.95em;
+  --text-mobile-body: 0.875em;
 
-	--text-tablet-title: 2.3em;
-	--text-tablet-subtitle: 1.1em;
-	--text-tablet-article: 1em;
-	--text-tablet-body: 0.975em;
+  --text-tablet-title: 2.3em;
+  --text-tablet-subtitle: 1.1em;
+  --text-tablet-article: 1em;
+  --text-tablet-body: 0.975em;
 
-	--color-primary: #2269e1;
+  --color-primary: #2269e1;
 }
 html,
 body {
-	margin: 0;
-	padding: 0;
-	overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+@keyframes wave {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20%);
+  }
+}
+
+.wave-char {
+  display: inline-block;
+}
+
+.group:hover .wave-char {
+  animation: wave 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }

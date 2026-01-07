@@ -40,6 +40,8 @@ const AboutMe = () => {
     { name: 'Three.js', level: 'Advanced' },
     { name: 'Figma', level: 'Proficient' },
     { name: 'Blender', level: 'Creative' },
+    { name: 'SupaBase', level: 'Advanced' },
+    { name: 'Flutter', level: 'Progressive' },
   ]
 
   return (
@@ -49,11 +51,11 @@ const AboutMe = () => {
       <div className='max-w-7xl mx-auto w-full'>
         {/* Header / Hero */}
         <div className='mb-16 md:mb-32'>
-          <h1 className='anim-text text-[12vw] leading-[0.9] font-black font-title tracking-tighter uppercase text-[#2269E1] mix-blend-difference'>
+          <h1 className='anim-text text-[12vw] leading-[0.9] font-black font-title  uppercase text-[#2269E1] mix-blend-difference'>
             Julian <br /> Kellmer
           </h1>
           <p className='anim-text text-xl md:text-3xl font-primary mt-8 max-w-2xl text-gray-400 leading-relaxed'>
-            Creative Developer based in Buenos Aires.
+            Product Developer situado en Buenos Aires.
           </p>
         </div>
 
@@ -65,17 +67,17 @@ const AboutMe = () => {
               About
             </h2>
             <p className='text-xl md:text-2xl font-primary leading-relaxed text-gray-200'>
-              I possess powerful skills in{' '}
-              <span className='text-white font-bold'>React</span> and{' '}
-              <span className='text-white font-bold'>Next.js</span>, building
-              scalable and performant web applications. My true passion lies in
-              creative coding with{' '}
-              <span className='text-[#2269E1] font-bold'>GSAP</span> and{' '}
+              Me especializo en el desarrollo de productos digitales, combinando{' '}
+              <span className='text-white font-bold'>React</span> y{' '}
+              <span className='text-white font-bold'>Next.js</span> para crear
+              soluciones escalables y de alto impacto. Mi enfoque une la
+              ingeniería con el diseño creativo mediante{' '}
+              <span className='text-[#2269E1] font-bold'>GSAP</span> y{' '}
               <span className='text-[#2269E1] font-bold'>Three.js</span>,
-              creating immersive web experiences. I also leverage{' '}
-              <span className='text-white font-bold'>Figma</span> and{' '}
-              <span className='text-white font-bold'>Blender</span> to bridge
-              the gap between design and development.
+              utilizando <span className='text-white font-bold'>Figma</span> y{' '}
+              <span className='text-white font-bold'>Blender</span> para
+              materializar productos que priorizan la experiencia del usuario y
+              la innovación técnica.
             </p>
           </div>
 
@@ -104,11 +106,11 @@ const AboutMe = () => {
         {/* Contact / Footer */}
         <div className='mt-32 anim-text'>
           <h2 className='text-sm font-bold uppercase tracking-widest text-gray-500 mb-6'>
-            Get in touch
+            Contacto
           </h2>
           <a
             href='mailto:Kellmer002@gmail.com'
-            className='text-4xl md:text-6xl lg:text-8xl font-black font-title tracking-tighter hover:text-[#2269E1] transition-colors duration-300 break-all'>
+            className='text-4xl md:text-6xl lg:text-8xl font-black font-title  hover:text-[#2269E1] transition-colors duration-300 break-all'>
             Kellmer002@gmail.com
           </a>
         </div>
