@@ -25,7 +25,7 @@ export default function InteractiveFooterCanvas() {
     const canvas = canvasRef.current!;
     const wrapper = wrapperRef.current!;
     if (!canvas || !wrapper) return;
-    const ctx = canvas.getContext("2d");
+    const ctx = canvas.getContext("2d")!;
 
     let width = 0;
     let height = 0;
