@@ -3,8 +3,8 @@
 import { useEffect, useRef } from "react";
 
 export default function InteractiveFooterCanvas() {
-  const canvasRef = useRef(null);
-  const wrapperRef = useRef(null);
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+  const wrapperRef = useRef<HTMLDivElement>(null);
 
   const pointer = useRef({
     down: false,
