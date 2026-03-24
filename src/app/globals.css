@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+/* ─── Design System ──────────────────────────────────────────────────────────
+   Import order matters:
+   1. Theme tokens first  (colors, typography variables)
+   2. Base reset          (applies those tokens to html/body)
+   3. Utilities           (classes that reference the tokens)
+   ────────────────────────────────────────────────────────────────────────── */
+
+/* 1. Theme */
+@import "../styles/theme/colors.css";
+@import "../styles/theme/tokens.css";
+
+/* 2. Base */
+@import "../styles/base/reset.css";
+
+/* 3. Utilities */
+@import "../styles/utilities/grid.css";
+@import "../styles/utilities/typography.css";

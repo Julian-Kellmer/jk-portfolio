@@ -1,0 +1,45 @@
+/* ─────────────────────────────────────────────────────────────────────────────
+   utilities/grid.css
+   Layout grid system: 12-column web grid + mobile 4-column fallback.
+   Usage:
+     <div class="layout-wrap">
+       <div class="layout-grid">
+         <div class="col-span-6"> ... </div>
+       </div>
+     </div>
+   ───────────────────────────────────────────────────────────────────────────── */
+
+@theme {
+  --grid-web-columns: 12;
+  --grid-web-gap:     16px;
+  --grid-web-side:    42px;
+}
+
+@layer utilities {
+  /* Wrapper: fixed lateral margins */
+  .layout-wrap {
+    width: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
+    
+  }
+
+  /* Grid: 4 columns on mobile by default */
+  .layout-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .layout-wrap {
+    padding-left: var(--grid-web-side);
+    padding-right: var(--grid-web-side);
+  }
+
+  .layout-grid {
+    grid-template-columns: repeat(var(--grid-web-columns), minmax(0, 1fr));
+    gap: var(--grid-web-gap);
+  }
+}

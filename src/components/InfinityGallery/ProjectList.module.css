@@ -1,0 +1,147 @@
+/* ─── Overlay backdrop ────────────────────────────────────────────────────── */
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: #0d0d0d;
+  overflow-y: auto;
+  padding: 0 0 80px;  /* los márgenes laterales los maneja layout-wrap */
+
+  /* Fade in / out */
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.overlayVisible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* ─── Header ─────────────────────────────────────────────────────────────── */
+/*   "All projects"  ·············  "86 projects"                             */
+.listHeader {
+  padding-top: 160px; 
+  padding-bottom: 120px; 
+    /* ← espacio desde el top del overlay hasta el título */
+}
+
+/* "All projects" — big left title */
+.listTitle {
+  margin: 0;
+}
+
+/* "86 projects" — muted count */
+.listCount {
+
+  white-space: nowrap;
+}
+
+/* ─── Year group layout ───────────────────────────────────────────────────── */
+/*   Two-column grid:                                                          */
+/*   [  Year  ] [  Project rows  ]                                             */
+.yearGroup {
+  align-items: start;
+  gap: 0;
+}
+
+/* The big year on the left */
+/* ──────────────────────────────────────────────────────────────────────────
+   📍 PARA EDITAR EL AÑO:
+   Archivo: ProjectList.module.css  →  class .yearLabel
+   ────────────────────────────────────────────────────────────────────────── */
+.yearLabel {
+  font-size: clamp(1rem, 3.5vw, 1.5rem);  /* tamaño del año */
+  color: var(--color-text);
+  letter-spacing: -0.02em;
+  padding-top: 18px;                       /* alineado con la primera fila */
+  line-height: 1;
+}
+
+/* Container for all rows within one year */
+.yearRows {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ─── Individual project row ──────────────────────────────────────────────── */
+/*   Three-column grid: title | tags | client                                  */
+/* ──────────────────────────────────────────────────────────────────────────
+   📍 PARA EDITAR CADA FILA:
+   Archivo: ProjectList.module.css  →  class .projectRow
+   ────────────────────────────────────────────────────────────────────────── */
+.projectRow {
+  display: grid;
+  grid-template-columns: 1fr auto auto;   /* título | tags | cliente */
+  align-items: center;
+  gap: 32px;
+  padding: 16px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+  cursor: pointer;
+
+  /* Stagger animation start state */
+  opacity: 0;
+  transform: translateY(12px);
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+/* Bottom border on the last row only */
+.yearRows .projectRow:last-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+/* Once triggered */
+.rowVisible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hover: dim the title */
+.projectRow:hover .rowTitle {
+  color: rgba(225, 225, 225, 0.4);
+}
+
+/* ─── Row cells ───────────────────────────────────────────────────────────── */
+
+/* ──────────────────────────────────────────────────────────────────────────
+   📍 PARA EDITAR TÍTULO:
+   Archivo: ProjectList.module.css  →  class .rowTitle
+   ────────────────────────────────────────────────────────────────────────── */
+.rowTitle {
+  color: var(--color-text);
+  transition: color 0.2s ease;
+  min-width: 0;
+}
+
+/* ──────────────────────────────────────────────────────────────────────────
+   📍 PARA EDITAR TAGS:
+   Archivo: ProjectList.module.css  →  classes .rowTags / .tag
+   ────────────────────────────────────────────────────────────────────────── */
+.rowTags {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 5px;
+}
+
+.tag {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 999px;
+  padding: 3px 9px;
+  white-space: nowrap;
+}
+
+/* ──────────────────────────────────────────────────────────────────────────
+   📍 PARA EDITAR CLIENTE:
+   Archivo: ProjectList.module.css  →  class .rowClient
+   ────────────────────────────────────────────────────────────────────────── */
+.rowClient {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: rgba(225, 225, 225, 0.45);
+  text-align: right;
+  white-space: nowrap;
+  min-width: 80px;
+}

@@ -1,0 +1,138 @@
+/* ─────────────────────────────────────────────────────────────────────────────
+   utilities/typography.css
+   Utility classes for each text level — mobile-first, web breakpoint upgrades.
+   All classes use --font-generalSans and the scale tokens from theme/tokens.css.
+
+   Usage:  <h1 class="text-h1">Hello</h1>
+           <p  class="text-body">Paragraph</p>
+           <span class="text-small">Caption</span>
+   ───────────────────────────────────────────────────────────────────────────── */
+
+@layer utilities {
+
+  /* ── Small ────────────────────────────────────────────────────────────────── */
+  .text-small {
+    font-family: var(--font-generalSans), sans-serif;
+    font-size:      var(--mobile-small-size);
+    font-weight:    var(--mobile-small-weight);
+    line-height:    var(--mobile-small-line-height);
+    letter-spacing: var(--mobile-small-tracking);
+  }
+
+  /* ── H1 ───────────────────────────────────────────────────────────────────── */
+  .text-h1 {
+    font-family: var(--font-generalSans), sans-serif;
+    font-size:      var(--mobile-h1-size);
+    font-weight:    var(--mobile-h1-weight);
+    line-height:    var(--mobile-h1-line-height);
+    letter-spacing: var(--mobile-h1-tracking);
+  }
+
+  /* ── H2 ───────────────────────────────────────────────────────────────────── */
+  .text-h2 {
+    font-family: var(--font-generalSans), sans-serif;
+    font-size:      var(--mobile-h2-size);
+    font-weight:    var(--mobile-h2-weight);
+    line-height:    var(--mobile-h2-line-height);
+    letter-spacing: var(--mobile-h2-tracking);
+  }
+
+  /* ── H3 ───────────────────────────────────────────────────────────────────── */
+  .text-h3 {
+    font-family: var(--font-generalSans), sans-serif;
+    font-size:      var(--mobile-h3-size);
+    font-weight:    var(--mobile-h3-weight);
+    line-height:    var(--mobile-h3-line-height);
+    letter-spacing: var(--mobile-h3-tracking);
+  }
+
+  /* ── H4 ───────────────────────────────────────────────────────────────────── */
+  .text-h4 {
+    font-family: var(--font-generalSans), sans-serif;
+    font-size:      var(--mobile-h4-size);
+    font-weight:    var(--mobile-h4-weight);
+    line-height:    var(--mobile-h4-line-height);
+    letter-spacing: var(--mobile-h4-tracking);
+  }
+
+  /* ── H5 ───────────────────────────────────────────────────────────────────── */
+  .text-h5 {
+    font-family: var(--font-generalSans), sans-serif;
+    font-size:      var(--mobile-h5-size);
+    font-weight:    var(--mobile-h5-weight);
+    line-height:    var(--mobile-h5-line-height);
+    letter-spacing: var(--mobile-h5-tracking);
+  }
+
+  /* ── H6 ───────────────────────────────────────────────────────────────────── */
+  .text-h6 {
+    font-family: var(--font-generalSans), sans-serif;
+    font-size:      var(--mobile-h6-size);
+    font-weight:    var(--mobile-h6-weight);
+    line-height:    var(--mobile-h6-line-height);
+    letter-spacing: var(--mobile-h6-tracking);
+  }
+
+  /* ── Body ─────────────────────────────────────────────────────────────────── */
+  .text-body {
+    font-family: var(--font-generalSans), sans-serif;
+    font-size:      var(--mobile-body-size);
+    font-weight:    var(--mobile-body-weight);
+    line-height:    var(--mobile-body-line-height);
+    letter-spacing: var(--mobile-body-tracking);
+  }
+}
+
+/* ── Web breakpoint upgrades ─────────────────────────────────────────────────
+   At ≥768px every class swaps to the web-scale tokens.
+   ─────────────────────────────────────────────────────────────────────────── */
+@media (min-width: 768px) {
+  .text-small {
+    font-size:      var(--web-small-size);
+    font-weight:    var(--web-small-weight);
+    line-height:    var(--web-small-line-height);
+    letter-spacing: var(--web-small-tracking);
+  }
+  .text-h1 {
+    font-size:      var(--web-h1-size);
+    font-weight:    var(--web-h1-weight);
+    line-height:    var(--web-h1-line-height);
+    letter-spacing: var(--web-h1-tracking);
+  }
+  .text-h2 {
+    font-size:      var(--web-h2-size);
+    font-weight:    var(--web-h2-weight);
+    line-height:    var(--web-h2-line-height);
+    letter-spacing: var(--web-h2-tracking);
+  }
+  .text-h3 {
+    font-size:      var(--web-h3-size);
+    font-weight:    var(--web-h3-weight);
+    line-height:    var(--web-h3-line-height);
+    letter-spacing: var(--web-h3-tracking);
+  }
+  .text-h4 {
+    font-size:      var(--web-h4-size);
+    font-weight:    var(--web-h4-weight);
+    line-height:    var(--web-h4-line-height);
+    letter-spacing: var(--web-h4-tracking);
+  }
+  .text-h5 {
+    font-size:      var(--web-h5-size);
+    font-weight:    var(--web-h5-weight);
+    line-height:    var(--web-h5-line-height);
+    letter-spacing: var(--web-h5-tracking);
+  }
+  .text-h6 {
+    font-size:      var(--web-h6-size);
+    font-weight:    var(--web-h6-weight);
+    line-height:    var(--web-h6-line-height);
+    letter-spacing: var(--web-h6-tracking);
+  }
+  .text-body {
+    font-size:      var(--web-body-size);
+    font-weight:    var(--web-body-weight);
+    line-height:    var(--web-body-line-height);
+    letter-spacing: var(--web-body-tracking);
+  }
+}
