@@ -22,8 +22,8 @@ export default function InteractiveFooterCanvas() {
   const audioRef = useRef(null);
 
   useEffect(() => {
-    const canvas = canvasRef.current;
-    const wrapper = wrapperRef.current;
+    const canvas = canvasRef.current!;
+    const wrapper = wrapperRef.current!;
     if (!canvas || !wrapper) return;
     const ctx = canvas.getContext("2d");
 
